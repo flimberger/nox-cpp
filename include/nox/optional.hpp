@@ -46,7 +46,7 @@ public:
      */
     template <typename... Args>
     constexpr Optional(Args&&... args) : m_has_value{true} {
-      value() = T{args...};
+        value() = T{args...};
     }
 
     /**
